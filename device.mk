@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libgenlock
 
+# Doze
+PRODUCT_PACKAGES += \
+    AsusDoze
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
