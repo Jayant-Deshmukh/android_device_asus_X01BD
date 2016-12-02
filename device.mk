@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_X01BD
+
 # VNDK-SP:
 PRODUCT_PACKAGES += \
     vndk-sp
