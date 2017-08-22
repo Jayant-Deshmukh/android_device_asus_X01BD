@@ -6,5 +6,9 @@
   {
     "repository":  "android_vendor_asus_X01BD",
     "target_path": "vendor/asus/X01BD"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
   }
 ]

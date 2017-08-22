@@ -27,6 +27,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+#switch on touchscreen gestures by default
+echo 1 > /proc/tpd_gesture
+
 function 8953_sched_dcvs_eas()
 {
     #governor settings
