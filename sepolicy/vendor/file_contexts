@@ -24,3 +24,6 @@
 /system/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
 
 /vendor/bin/init.wlan.sh    u:object_r:qti_init_shell_exec:s0
+
+# USB HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.x01bd     u:object_r:hal_usb_default_exec:s0
