@@ -83,3 +83,7 @@ PRODUCT_COPY_FILES += \
 # QTI whilelistapp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+# VNDK-SP:
+PRODUCT_PACKAGES += \
+    vndk-sp
