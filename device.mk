@@ -315,6 +315,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Radio
 PRODUCT_PACKAGES += \
     rild \
@@ -345,7 +349,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     init.spectrum.rc \
-    init.spectrum.sh
+    init.spectrum.sh \
+    init.performance.x01bd.rc
 
 # Recovery
 PRODUCT_PACKAGES += \

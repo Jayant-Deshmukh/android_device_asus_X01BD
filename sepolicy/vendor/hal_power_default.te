@@ -3,3 +3,9 @@ allow hal_power_default proc_tpd_gesture:file rw_file_perms;
 
 # Allow hal_power_default to read power stats
 r_dir_file(hal_power_default, debugfs_wlan)
+
+# Power hal 1.3
+allow hal_power_default sysfs_msm_subsys:dir search;
+allow hal_power_default sysfs_msm_subsys:file w_file_perms;
+allow hal_power_default sysfs_devices_system_cpu:file w_file_perms;
+allow hal_power_default latency_device:chr_file w_file_perms;
