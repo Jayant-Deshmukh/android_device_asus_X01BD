@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
+    android.hardware.power@1.2-service.x01bd-libperfmgr
 
 # Radio
 PRODUCT_PACKAGES += \
