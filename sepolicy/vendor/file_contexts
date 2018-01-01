@@ -23,3 +23,6 @@
 /vendor/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
 
 /vendor/bin/init.wlan.sh    u:object_r:qti_init_shell_exec:s0
+
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service.x01bd-libperfmgr u:object_r:hal_power_default_exec:s0
