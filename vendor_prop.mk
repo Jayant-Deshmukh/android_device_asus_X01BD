@@ -119,7 +119,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.lcd_density=420 \
     sdm.debug.disable_rotator_split=1 \
     sdm.perf_hint_window=50 \
-    vendor.display.enable_default_color_mode=1
+    sdm.debug.disable_skip_validate=1 \
+    vendor.display.enable_default_color_mode=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.display.disable_skip_validate=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -165,7 +168,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM cabl
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=2
+    ro.qualcomm.cabl=2 \
+    ro.vendor.display.cabl=2
 
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -219,10 +223,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sensors.mot_detect=true \
     ro.vendor.qti.sensors.facing=false \
     ro.vendor.qti.sensors.cmc=false
-
-# Skip Validate Disable
-PRODUCT_PROPERTY_OVERRIDES += \
-    sdm.debug.disable_skip_validate=1
 
 # Shutdown
 PRODUCT_PROPERTY_OVERRIDES += \
