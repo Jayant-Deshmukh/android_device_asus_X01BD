@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.X01BD
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0
