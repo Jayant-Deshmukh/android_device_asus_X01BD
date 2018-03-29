@@ -237,6 +237,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
-# ZRAM
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.config.zram=true
