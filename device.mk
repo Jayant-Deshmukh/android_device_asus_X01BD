@@ -361,6 +361,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # VNDK-SP:
 PRODUCT_PACKAGES += \
     vndk-sp
