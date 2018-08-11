@@ -214,12 +214,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    com.nxp.nfc.nq.xml \
-    libnqnfc-nci \
-    libnqp61-jcop-kit \
-    nfc_nci.nqx.default \
-    NQNfcNci \
+    NfcNci \
+    SecureElement \
     Tag
 
 # OMX

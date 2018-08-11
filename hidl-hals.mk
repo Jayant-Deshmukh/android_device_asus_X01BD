@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
+    android.hardware.nfc@1.1-impl \
+    android.hardware.nfc@1.1-service \
     vendor.nxp.hardware.nfc@1.0-impl \
     vendor.nxp.hardware.nfc@1.0-service
 
