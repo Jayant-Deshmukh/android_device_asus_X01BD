@@ -231,6 +231,14 @@ VENDOR_SECURITY_PATCH := 2019-05-01
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-05-01
+
+# System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0
+BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p13\"
+
 # Vendor libinit
 TARGET_INIT_VENDOR_LIB := libinit_X01BD
 TARGET_RECOVERY_DEVICE_MODULES := libinit_X01BD
