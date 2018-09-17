@@ -498,4 +498,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ZenfoneParts
 
+# Hostapd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny
+
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
