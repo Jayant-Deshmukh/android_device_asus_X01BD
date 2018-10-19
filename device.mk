@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -285,6 +286,10 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Nocutout
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Health
 PRODUCT_PACKAGES += \
