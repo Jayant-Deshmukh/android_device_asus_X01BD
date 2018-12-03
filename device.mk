@@ -48,6 +48,29 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+# GPS / Location
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1-impl-qti \
+    android.hardware.gnss@1.1-service-qti \
+    libcurl \
+    libgnss \
+    libgnsspps \
+    libgps.utils \
+    liblocation_api \
+    libloc_core \
+    libloc_pla \
+    libsensorndkbridge \
+    libvehiclenetwork-native
+
+PRODUCT_PACKAGES += \
+    apdr.conf \
+    flp.conf \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    gps.conf \
+    xtwifi.conf
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
