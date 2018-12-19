@@ -40,5 +40,10 @@ TARGET_2ND_CPU_VARIANT := kryo
 
 TARGET_USES_64_BIT_BINDER := true
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
 # inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
