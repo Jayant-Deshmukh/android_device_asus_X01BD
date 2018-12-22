@@ -141,6 +141,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.target_support_bframe=1 \
     ro.config.media_vol_steps=30 \
 
+# Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
