@@ -18,7 +18,8 @@
         android:title="@string/category_system">
         <com.asus.zenparts.VibratorStrengthPreference
             android:key="vib_strength"
-            android:title="@string/vib_strength_title_head" />
+            android:title="@string/vib_strength_title_head"
+            android:icon="@drawable/ic_vibrate" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -28,7 +29,8 @@
                  android:key="kcal"
                  android:fragment="com.asus.zenparts.DisplayCalibration"
                  android:summary="@string/kcal_summary"
-                 android:title="@string/kcal_title" />
+                 android:title="@string/kcal_title"
+                 android:icon="@drawable/ic_kcal" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -42,7 +44,8 @@
             android:defaultValue="0"
             android:entries="@array/spectrum_profiles"
             android:entryValues="@array/spectrum_values"
-            android:dialogTitle="@string/spectrum_dialogTitle" />
+            android:dialogTitle="@string/spectrum_dialogTitle"
+            android:icon="@drawable/ic_kernel" />
     </PreferenceCategory>
 
 </PreferenceScreen>
