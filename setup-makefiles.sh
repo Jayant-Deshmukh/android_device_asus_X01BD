@@ -17,7 +17,6 @@
 
 set -e
 
-# Required!
 DEVICE=X01BD
 VENDOR=asus
 
