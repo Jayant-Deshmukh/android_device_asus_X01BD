@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
+# Excluded Input devices
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     libcurl \
