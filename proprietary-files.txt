@@ -390,6 +390,11 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/etc/qdcm_calib_data_hx83112a_1080p_video_mode_dsi_tm_panel.xml
 vendor/etc/qdcm_calib_data_nt36672ah_1080p_video_mode_dsi_kd_panel.xml
 
+# Dirac - from Xiaomi
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 #Display Firmware
 vendor/firmware/Himax_firmware.bin
 vendor/firmware/hx_criteria.csv
