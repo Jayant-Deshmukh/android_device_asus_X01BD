@@ -75,6 +75,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service
 
+# NFC-Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0-service
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
