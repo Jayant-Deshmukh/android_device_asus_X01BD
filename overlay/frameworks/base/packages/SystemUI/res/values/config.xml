@@ -23,6 +23,6 @@
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">true</bool>
 	
-    <!-- Whether to show HD icon in the status bar for volte -->
-    <bool name="config_display_hd_volte">true</bool>
+    <!-- Show volte icon -->
+    <bool name="config_display_volte">true</bool>
 </resources>
