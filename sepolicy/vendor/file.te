@@ -1,6 +1,7 @@
 type sysfs_wifi, sysfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 type proc_tpd_gesture, fs_type, proc_type;
+type kcal_dev, sysfs_type, fs_type;
 
 # Fingerprint
 type gxfingerprint_data_file, core_data_file_type, data_file_type, file_type;
