@@ -638,4 +638,7 @@
 
     <!-- Whether to enable smart clock feature -->
     <bool name="config_enableSmartClock">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
 </resources>
