@@ -429,6 +429,8 @@
         <item>"/system/lib64/libRSCpuRef.so"</item>
         <item>"/system/lib64/libblas.so"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>"/system/framework/arm64/boot-QPerformance.oat"</item>
+        <item>"/system/framework/arm64/boot-UxPerformance.oat"</item>
         <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
