@@ -320,7 +320,8 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    init.wlan.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
