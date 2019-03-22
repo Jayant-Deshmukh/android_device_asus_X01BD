@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_X01BD.mk
+    $(LOCAL_DIR)/superior_X01BD.mk
