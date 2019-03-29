@@ -33,12 +33,6 @@
     <string name="menu_reset">Reset</string>
     <string name="kcal_color_temp">Color temperature (K)</string>
 
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Kernel Profiles</string>
-    <string name="spectrum_title">Kernel Profile</string>
-    <string name="spectrum_summary">Choose your kernel profile</string>
-    <string name="spectrum_dialogTitle">Choose your kernel profile</string>
-
     <!-- Label for feature switch [CHAR LIMIT=30] -->
     <string name="switch_bar_on">On</string>
 
