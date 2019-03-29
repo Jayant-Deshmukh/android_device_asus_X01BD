@@ -51,5 +51,7 @@ public class Startup extends BroadcastReceiver {
         VibratorStrengthPreference.restore(context);
         DisplayCalibration.restore(context);
         new DiracUtils(context).onBootCompleted();
+        boolean usbFastchargeStoredValue = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.USB_FASTCHARGE_KEY, false);
+        Utils.writeValue(DeviceSettings.USB_FASTCHARGE_PATH, usbFastchargeStoredValue ? "1" : "0" );
     }
 }

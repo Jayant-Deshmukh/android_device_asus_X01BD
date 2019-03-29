@@ -174,6 +174,10 @@ on boot
     chown root system /sys/class/timed_output/vibrator/vtg_level
     chmod 0660 /sys/class/timed_output/vibrator/vtg_level
 
+    # USB Fastcharge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0660 /sys/kernel/fast_charge/force_fast_charge
+
 #   Define TCP buffer sizes for various networks
 #   ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
     setprop net.tcp.buffersize.wifi    524288,2097152,4194304,262144,524288,1048576

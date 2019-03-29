@@ -45,11 +45,16 @@ public class DeviceSettings extends PreferenceFragment {
 
     private static final String KEY_CATEGORY_DISPLAY = "display";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+    private static final String KEY_CATEGORY_USB_FASTCHARGE = "usb_fastcharge";
+    public static final String USB_FASTCHARGE_KEY = "fastcharge";
+    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
     private TwoStatePreference mTapToWakeSwitch;
     private VibratorStrengthPreference mVibratorStrength;
 
     private Preference mKcalPref;
+    private SwitchPreference mFastcharge;
+    private PreferenceCategory mUsbFastcharge;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -65,10 +70,23 @@ public class DeviceSettings extends PreferenceFragment {
             }
         });
 
+        if (Utils.fileWritable(USB_FASTCHARGE_PATH)) {
+          mFastcharge = (SwitchPreference) findPreference(USB_FASTCHARGE_KEY);
+          mFastcharge.setChecked(Utils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, false));
+          mFastcharge.setOnPreferenceChangeListener(this);
+        } else {
+          mUsbFastcharge = (PreferenceCategory) prefSet.findPreference("usb_fastcharge");
+          prefSet.removePreference(mUsbFastcharge);
+        }
+
         mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
         if (mVibratorStrength != null) {
             mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
         }
+    }
+
+    private void setFastcharge(boolean value) {
+            Utils.writeValue(USB_FASTCHARGE_PATH, value ? "1" : "0");
     }
 
     @Override
@@ -76,4 +94,19 @@ public class DeviceSettings extends PreferenceFragment {
         return super.onPreferenceTreeClick(preference);
     }
 
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    final String key = preference.getKey();
+    boolean value;
+    String strvalue;
+    if (USB_FASTCHARGE_KEY.equals(key)) {
+            value = (Boolean) newValue;
+            mFastcharge.setChecked(value);
+            setFastcharge(value);
+            SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
+            editor.putBoolean(USB_FASTCHARGE_KEY, value);
+            editor.commit();
+            return true;
+        }
+        return true;
 }
