@@ -3,4 +3,8 @@ type_transition init nvram_btwifi_exec:process nvram_btwifi;
 allow init init_blutmac_exec:file { execute execute_no_trans };
 allow init nvram_btwifi:process { rlimitinh siginh transition };
 allow init nvram_btwifi_exec:file execute;
+allow init sysfs_devices_system_cpu:dir search;
+allow init sysfs_devices_system_cpu:file { read write };
+allow init sysfs_devices_system_cpu:file open;
+allow init sysfs_devices_system_cpu:file getattr;
 dontaudit init nvram_btwifi:process noatsecure;
