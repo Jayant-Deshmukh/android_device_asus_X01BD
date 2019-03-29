@@ -225,6 +225,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Music
 
+# MTweaks & Spectrum
+PRODUCT_PACKAGES += \
+    MTweaks \
+    Spectrum
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
