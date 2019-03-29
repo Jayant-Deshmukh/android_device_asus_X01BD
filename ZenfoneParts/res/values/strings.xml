@@ -83,4 +83,10 @@
 
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac Sound</string>
+
+     <!-- USB Fastcharge -->
+     <string name="usb_fastcharge_title">USB Fastcharge</string>
+     <string name="fastcharge_title">Enable USB Fastcharge</string>
+     <string name="fastcharge_summary">Enable to use fastcharge when connected to an Computer</string>
+
 </resources>
