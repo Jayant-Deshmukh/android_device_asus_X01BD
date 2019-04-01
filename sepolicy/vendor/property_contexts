@@ -25,3 +25,6 @@ persist.vendor.camera.bokeh.dumpimg           u:object_r:vendor_camera_prop:s0
 vendor.debug.camera.prop_dis                  u:object_r:vendor_camera_prop:s0
 sys.nvram.btmac                               u:object_r:nvram_btwifi_prop:s0
 sys.nvram.wifimac                             u:object_r:nvram_btwifi_prop:s0
+
+# Spectrum
+persist.spectrum.profile                      u:object_r:spectrum_prop:s0
