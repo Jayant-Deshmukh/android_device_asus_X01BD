@@ -225,10 +225,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Music
 
-# MTweaks & Spectrum
+# MTweaks
 PRODUCT_PACKAGES += \
-    MTweaks \
-    Spectrum
+    MTweaks
 
 # Media
 PRODUCT_COPY_FILES += \
