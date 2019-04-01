@@ -221,10 +221,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.x01bd
 
-# MTweaks & Spectrum
+# MTweaks
 PRODUCT_PACKAGES += \
-    MTweaks \
-    Spectrum
+    MTweaks
 
 # Media
 PRODUCT_COPY_FILES += \
