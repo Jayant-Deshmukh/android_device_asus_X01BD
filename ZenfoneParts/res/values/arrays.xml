@@ -12,6 +12,7 @@
         <item>2</item>
         <item>1</item>
         <item>3</item>
+    </string-array>
 
     <!-- Values for Dirac headset pref -->
     <string-array name="dirac_headset_pref_entries" translatable="false">
