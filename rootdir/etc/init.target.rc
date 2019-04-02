@@ -85,6 +85,7 @@ on post-fs
     start vendor.qseecomd
     exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
+
 #Huaqin add for ZQL1650-43 by lanshiming at 2018/1/18 start
     start emmc_prop_init
 #Huaqin add for ZQL1650-43 by lanshiming at 2018/1/18 end
@@ -582,3 +583,6 @@ on property:sys.boot_completed=1
     write /sys/class/gpio/gpio12/value 0
     write /sys/class/gpio/unexport 12
 # Huaqin add for ZQL1820-84 by liunianliang at 2018/07/16 end
+
+# default country code
+setprop ro.boot.wificountrycode 00
