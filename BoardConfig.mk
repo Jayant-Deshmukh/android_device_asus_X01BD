@@ -174,17 +174,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_PROVIDES_KEYMASTER := true
 
 # Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_DEBUG_INFO := false
-      USE_DEX2OAT_DEBUG := false
-      DONT_DEXPREOPT_PREBUILTS := true
-      WITH_DEXPREOPT_PIC := true
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-  endif
-endif
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
@@ -222,6 +212,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Power
+TARGET_HAS_NO_WIFI_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Peripheral manager
@@ -242,7 +233,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X01BD
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
-TARGET_RIL_VARIANT := caf
+#TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
 # root extra folders
@@ -256,6 +247,7 @@ VENDOR_SECURITY_PATCH := 2018-12-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
+include vendor/omni/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_SEPOLICY_VERS := 28.0
 SELINUX_IGNORE_NEVERALLOWS := true
@@ -280,6 +272,12 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_DRIVER_STATE_CTRL_PARAM := "/sys/kernel/boot_wlan/boot_wlan"
 WIFI_DRIVER_STATE_OFF := 0
 WIFI_DRIVER_STATE_ON := 1
+
+# Omni House
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8998
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8998
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8998
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8998
 
 # inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
