@@ -1,0 +1,3 @@
+add_lunch_combo syberia_X01BD-eng
+add_lunch_combo syberia_X01BD-user
+add_lunch_combo syberia_X01BD-userdebug
