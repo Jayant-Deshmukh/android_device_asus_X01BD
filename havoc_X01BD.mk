@@ -25,6 +25,10 @@ $(call inherit-product, vendor/havoc/config/common.mk)
 # Official
 export export HAVOC_BUILD_TYPE=Official
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2280
+
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
