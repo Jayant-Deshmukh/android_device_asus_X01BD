@@ -28,3 +28,6 @@
 # blutmac script
 /(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
 /vendor/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
+
+# USB HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.X01BD       u:object_r:hal_usb_default_exec:s0
