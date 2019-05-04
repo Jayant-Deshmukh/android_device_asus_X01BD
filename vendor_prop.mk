@@ -80,6 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
+    persist.radio.aosp_usr_pref_sel=true \
     persist.vendor.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true \
     ro.vendor.use_data_netmgrd=true
