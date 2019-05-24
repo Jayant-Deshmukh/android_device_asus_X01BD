@@ -25,8 +25,6 @@ import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
 
-import com.asus.zenparts.dirac.DiracUtils;
-
 public class Startup extends BroadcastReceiver {
 
     private void restore(String file, boolean enabled) {
@@ -50,6 +48,5 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         VibratorStrengthPreference.restore(context);
         DisplayCalibration.restore(context);
-        DiracUtils.initialize();
     }
 }
