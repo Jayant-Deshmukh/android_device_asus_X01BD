@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0
