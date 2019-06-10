@@ -1,1 +1,2 @@
 allow platform_app vendor_cfg_prop:file { getattr open read };
+allow platform_app sysfs_leds:dir search;
