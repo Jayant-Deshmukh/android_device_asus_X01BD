@@ -484,13 +484,12 @@ on post-fs-data
 
 service nvram_btwifi /vendor/bin/nvram_btwifi
     user root
-    group system
-    chmod 0644 /vendor/bin/nvram_btwifi
+    group system oem_2901
     oneshot
     disabled
 
 on property:sys.boot_completed=1
-start nvram_btwifi
+    start nvram_btwifi
 
 on property:sys.nvram.btmac=*
     setprop ro.btmac ${sys.nvram.btmac}
