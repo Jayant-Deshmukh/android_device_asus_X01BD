@@ -81,10 +81,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     ro.vendor.use_data_netmgrd=true
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=0
-
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
@@ -238,4 +234,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+
+# WFD display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0
 
