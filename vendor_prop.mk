@@ -53,7 +53,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam \
-    camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android 
+    vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
