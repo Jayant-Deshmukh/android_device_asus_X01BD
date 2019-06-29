@@ -34,12 +34,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=false \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2 \
+    vendor.audio.adm.buffering.ms=3 \
 
  # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.max.hs.connections=2 \
     vendor.qcom.bluetooth.soc=cherokee \
+    vendor.bluetooth.soc=cherokee \
     persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     persist.bt.max.a2dp.connections=2 \
@@ -52,7 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.ois.disable=1 \
     persist.vendor.camera.is_type=4 \
-    persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.preview.ubwc=0 \
     persist.ts.rtmakeup=1 \
@@ -103,7 +103,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GMS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase.ms=android-asus-tpin
+    ro.com.google.clientidbase=android-asus \
+    ro.com.google.clientidbase.ms=android-asus-tpin \
+    ro.com.google.rlzbrandcode=ASUP \
+    ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
