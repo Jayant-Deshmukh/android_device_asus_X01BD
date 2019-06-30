@@ -17,6 +17,9 @@
 # Call the proprietary setup
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
 
+# HIDL HALs
+$(call inherit-product, $(LOCAL_PATH)/hidl-hals.mk)
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -58,12 +61,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.0-service \
     audio.a2dp.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
@@ -122,8 +119,6 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.1-impl-qti \
-    android.hardware.gnss@1.1-service-qti \
     libcurl \
     libgnss \
     libgnsspps \
@@ -239,7 +234,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
