@@ -256,6 +256,10 @@ BOARD_SEPOLICY_VERS := 28.0
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := /proc/tpd_gesture
 
+# Vendor libinit
+TARGET_INIT_VENDOR_LIB := libinit_X01BD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X01BD
+
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
