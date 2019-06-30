@@ -37,13 +37,11 @@
             <Limit name="measured-frame-rate-176x144" range="400-400" />
             <Limit name="measured-frame-rate-352x288" range="261-261" />
         </MediaCodec>
-        <!--/*Huaqin add for remove divxsw by longteng at 2018/01/26 start*/-->
         <MediaCodec name="OMX.qcom.video.encoder.mpeg4" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="351-351" />
             <Limit name="measured-frame-rate-352x288" range="263-263" />
             <Limit name="measured-frame-rate-640x480" range="144-144" />
         </MediaCodec>
-        <!--/*Huaqin add for remove divxsw by longteng at 2018/01/26 end*/-->
         <MediaCodec name="OMX.qcom.video.encoder.vp8" type="video/x-vnd.on2.vp8" update="true">
             <Limit name="measured-frame-rate-320x180" range="312-312" />
             <Limit name="measured-frame-rate-640x360" range="175-174" />
@@ -121,7 +119,7 @@
             <Limit name="measured-frame-rate-640x360" range="210-215" />
             <Limit name="measured-frame-rate-720x480" range="120-125" />
             <Limit name="measured-frame-rate-1280x720" range="70-85" />
-            <Limit name="measured-frame-rate-1920x1080" range="45-48" />
+            <Limit name="measured-frame-rate-1920x1080" range="15-70" />
         </MediaCodec>
         <!--Huaqin add for fix  cts by longteng at 2018/04/23 end-->
         <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" update="true">
