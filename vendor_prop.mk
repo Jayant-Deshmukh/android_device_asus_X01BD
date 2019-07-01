@@ -35,25 +35,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
  # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bt.max.hs.connections=2 \
+    bt.max.hfpclient.connections=1 \
     vendor.qcom.bluetooth.soc=cherokee \
     persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    persist.bt.max.hs.connections=2 \
     persist.bt.max.a2dp.connections=2 \
     persist.bt.enable.multicast=1 \
+    persist.bt.a2dp.aac_disable=true \
     persist.bt.hfp.playbackforvr=false \
     persist.bt.hfp.playbackforvoip=false
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.eis.enable=1 \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.is_type=4 \
     persist.vendor.camera.expose.aux=1 \
     persist.vendor.camera.HAL3.enabled=1 \
     persist.vendor.camera.preview.ubwc=0 \
     persist.ts.rtmakeup=1 \
-    persist.vendor.camera.expose.aux=1 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam \
-    camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android 
+    vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -61,7 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=1
+    persist.vendor.cne.feature=1
 
 # Dalvik overrides
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -75,13 +77,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
-    persist.data.mode=concurrent \
-    persist.data.netmgrd.qos.enable=true \
-    ro.use_data_netmgrd=true
-
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=0
+    persist.vendor.data.mode=concurrent \
+    ro.vendor.use_data_netmgrd=true
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -91,30 +88,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.coresight.config=stm-events
 
+# FM
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.fm.a2dp.conc.disabled=false
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# FUSE
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.fuse_sdcard=true
-
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
-    debug.gralloc.enable_fb_ubwc=1 \
-    debug.hwui.use_buffer_age=false \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.early_phase_offset_ns=5000000 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
+    debug.sf.early_phase_offset_ns=5000000 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=420 \
-    vendor.display.lcd_density=420 \
-    sdm.debug.disable_rotator_split=1 \
-    sdm.perf_hint_window=50 \
+    ro.sf.lcd_density=480 \
+    sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
 # Media
@@ -138,13 +132,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true \
-    persist.vendor.qcomsysd.enabled=1 \
-    ro.additionalbutton.operation=0 \
-    ro.am.reschedule_service=true \
-    ro.control_privapp_permissions=log \
-    ro.opa.eligible_device=true \
-    ro.sys.fw.use_trim_settings=true
+    keyguard.no_require_sim=true
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -153,6 +141,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.port=I2C \
+    ro.hardware.nfc_nci=pn8x \
     persist.nfc.smartcard.config=SIM1
 
 # NTP Server
@@ -161,7 +150,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM cabl
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=2
+    ro.qualcomm.cabl=2 \
+    ro.vendor.display.cabl=2
 
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -173,20 +163,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
     DEVICE_PROVISIONED=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.radio.multisim.config=dsds \
     persist.radio.schd.cache=3500 \
-    persist.radio.VT_CAM_INTERFACE=1 \
     persist.radio.aosp_usr_pref_sel=true \
-    persist.radio.VT_CAM_INTERFACE=2 \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
+    persist.vendor.radio.add_power_save=1 \
     ril.subscription.types=NV,RUIM \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.carrier=unknown \
@@ -200,20 +186,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableADBLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1 \
     persist.vendor.ims.disableDebugLogs=1 \
-    persist.vendor.ims.disableIMSLogs=1
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.radio.VT_CAM_INTERFACE=1 \
+    persist.radio.VT_CAM_INTERFACE=2
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.agg.dl_pkt=10 \
-    persist.data.df.agg.dl_size=4096 \
     persist.data.df.dev_name=rmnet_usb0 \
-    persist.data.df.dl_mode=5 \
-    persist.data.df.iwlan_mux=9 \
-    persist.data.df.mux_count=8 \
-    persist.data.df.ul_mode=5 \
-    persist.data.wda.enable=true \
-    persist.rmnet.data.enable=true \
-    persist.vendor.radio.add_power_save=1
+    persist.rmnet.data.enable=true
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -227,11 +208,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Skip Validate Disable
 PRODUCT_PROPERTY_OVERRIDES += \
-    sdm.debug.disable_skip_validate=1
+    sdm.debug.disable_skip_validate=1 \
+    vendor.display.disable_skip_validate=1
 
 # Shutdown
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.shutdown_timeout=0 \
     sys.vendor.shutdown.waittime=500
 
 # System prop for UBWC
@@ -241,6 +222,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
+
+# WFD display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0
 
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
