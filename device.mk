@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     libdisplayconfig \
+    libhwc2on1adapter \
     liboverlay \
     libqdMetaData \
     libqdMetaData.system \
