@@ -40,6 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
