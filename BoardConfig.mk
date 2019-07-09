@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -178,20 +178,11 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# Init
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-#NFC
-#BOARD_NFC_CHIPSET := pn553
-#BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
-#NXP_CHIP_TYPE := 4
-#TARGET_USES_NQ_NFC := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -224,9 +215,6 @@ TARGET_USES_INTERACTION_BOOST := true
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Peripheral manager
-TARGET_PER_MGR_ENABLED := true
-
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
@@ -241,10 +229,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
-PROTOBUF_SUPPORTED := true
 TARGET_USES_OLD_MNC_FORMAT := true
 
-# root extra folders
+# Root extra folders
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 
 # Seccomp
@@ -267,7 +254,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_X01BD
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
-BOARD_HAS_QCOM_WLAN_SDK := true
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
