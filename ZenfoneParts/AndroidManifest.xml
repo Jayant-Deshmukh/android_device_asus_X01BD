@@ -85,5 +85,34 @@
             android:name=".DiracService"
             android:enabled="true"
             android:stopWithTask="false" />
+
+        <!-- stub to ensure its loaded - DO NOT REMOVE -->
+
+        <activity android:name=".KeyHandler" />
+
+        <activity
+            android:name=".settings.ScreenOffGestureSettings"
+	    android:exported="true"
+            android:label="@string/zenmotions"
+            android:theme="@style/DeviceSettings">
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+          </intent-filter>
+	</activity>
+
+        <service android:name=".SensorsDozeService"
+                 android:permission="SensorsDozeService">
+        </service>
+
+        <activity
+            android:name=".TouchscreenGesturePreferenceActivity"
+	    android:exported="true"
+            android:label="@string/ambient_display_gestures_title"
+            android:theme="@style/DeviceSettings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+	</activity>
+
     </application>
 </manifest>

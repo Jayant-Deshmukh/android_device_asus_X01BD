@@ -137,4 +137,23 @@
         <item>253 246 243 35 50 123 130 0</item>
         <item>226 215 255 35 40 119 132 10</item>
     </array>
+
+    <string-array name="notification_slider_action_entries" translatable="false">
+        <item>@string/slider_mode_off</item>
+        <item>@string/slider_mode_vibrate</item>
+        <item>@string/slider_mode_priority</item>
+        <item>@string/slider_mode_alarm</item>
+        <item>@string/slider_mode_dnd</item>
+        <item>@string/slider_mode_silent</item> 
+
+    </string-array>
+
+    <string-array name="notification_slider_action_entry_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>
