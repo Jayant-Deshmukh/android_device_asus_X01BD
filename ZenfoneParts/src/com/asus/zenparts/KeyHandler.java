@@ -40,6 +40,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 import android.service.notification.ZenModeConfig;
+import com.asus.zenparts.settings.DeviceSettings;
 import com.asus.zenparts.settings.ScreenOffGesture;
 import android.os.UserHandle;
 import com.android.internal.os.AlternativeDeviceKeyHandler;
@@ -56,6 +57,8 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
     private static final int GESTURE_REQUEST = 1;
     private static final int GESTURE_WAKELOCK_DURATION = 2000;
     private static final boolean DEBUG = true;
+    private static final String KEY_CONTROL_PATH = "/proc/s1302/virtual_key";
+    private static final String FPC_CONTROL_PATH = "/sys/devices/soc/soc:fpc_fpc1020/proximity_state";
 
     // Supported scancodes
     private static final int GESTURE_C_SCANCODE = 249;
@@ -158,10 +161,10 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
         mSettingsObserver = new SettingsObserver(mHandler);
         mSettingsObserver.observe();
         mEventHandler = new EventHandler();
-        mPowerManager = context.getSystemService(PowerManager.class);
+        mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
         mNoMan = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        mSensorManager = context.getSystemService(SensorManager.class);
+        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         IntentFilter screenStateFilter = new IntentFilter(Intent.ACTION_SCREEN_ON);
         screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
@@ -274,7 +277,10 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
         public void onSensorChanged(SensorEvent event) {
             mProxyIsNear = event.values[0] < mSensor.getMaximumRange();
             if (DEBUG) Log.d(TAG, "mProxyIsNear = " + mProxyIsNear);
+            if(Utils.fileWritable(FPC_CONTROL_PATH)) {
+                Utils.writeValue(FPC_CONTROL_PATH, mProxyIsNear ? "1" : "0");
         }
+     }
 
     @Override
         public void onAccuracyChanged(Sensor sensor, int accuracy) {

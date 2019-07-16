@@ -37,6 +37,8 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
     private static final String KEY_GESTURE_PICK_UP = "gesture_pick_up";
     private static final String KEY_GESTURE_POCKET = "gesture_pocket";
     private static final String KEY_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
+    private static final String KEY_PROXIMITY_WAKE = "proximity_wake_enable";
+
     private TextView mSwitchBarText;
 
     private Switch mAmbientDisplaySwitch;
@@ -44,6 +46,7 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
     private SwitchPreference mHapticFeedback;
     private SwitchPreference mPickupPreference;
     private SwitchPreference mPocketPreference;
+    private SwitchPreference mProximityWakePreference;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -100,6 +103,9 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
         mPocketPreference = (SwitchPreference) findPreference(KEY_GESTURE_POCKET);
         mPocketPreference.setEnabled(dozeEnabled);
 
+        mProximityWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
+        mProximityWakePreference.setOnPreferenceChangeListener(mGesturePrefListener);
+
         mHapticFeedback = (SwitchPreference) findPreference(KEY_HAPTIC_FEEDBACK);
         mHapticFeedback.setOnPreferenceChangeListener(mHapticPrefListener);
     }
@@ -143,6 +149,9 @@ public class TouchscreenGesturePreferenceFragment extends PreferenceFragment {
             if ((boolean) newValue) {
                 final String key = preference.getKey();
                 if (KEY_GESTURE_HAND_WAVE.equals(key)) {
+                    mProximityWakePreference.setChecked(false);
+                } else if (KEY_PROXIMITY_WAKE.equals(key)) {
+                    mHandwavePreference.setChecked(false);
                 }
             }
             return true;
