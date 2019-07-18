@@ -522,7 +522,7 @@
     <bool name="config_hasFingerprintSensor">true</bool>
 
     <!-- Flashlight on power button -->
-    <integer name="config_flashlightProximityTimeout">3000</integer>
+    <integer name="config_flashlightProximityTimeout">-1</integer>
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
