@@ -41,7 +41,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/asus/X01BD
-TARGET_KERNEL_CONFIG := etherious_defconfig
+TARGET_KERNEL_CONFIG := X01BD_defconfig
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
