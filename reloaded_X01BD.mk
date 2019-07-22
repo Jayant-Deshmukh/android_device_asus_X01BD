@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Havoc-OS Project
+# Copyright (C) 2018 The Reloaded Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Havoc-OS stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
-
-# Official Havoc-OS
-export export HAVOC_BUILD_TYPE=Official
+# Inherit some common Reloaded stuff
+$(call inherit-product, vendor/reloaded/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+export RELOADED_BUILDTYPE=OFFICIAL
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_X01BD
+PRODUCT_NAME := reloaded_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M2
