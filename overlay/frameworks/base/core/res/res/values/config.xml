@@ -637,6 +637,6 @@
     <integer name="config_screen_off_delay">0</integer>
 
     <!-- Zenmotions -->
-    <string name="config_alternativeDeviceKeyHandlerLib" translatable="false">/system/priv-app/ZenfoneParts/ZenfoneParts.apk</string>
-    <string name="config_alternativeDeviceKeyHandlerClass" translatable="false">com.asus.zenparts.KeyHandler</string>
+    <string name="config_DeviceKeyHandlerLib" translatable="false">/system/priv-app/ZenfoneParts/ZenfoneParts.apk</string>
+    <string name="config_DeviceKeyHandlerClass" translatable="false">com.asus.zenparts.KeyHandler</string>
 </resources>
