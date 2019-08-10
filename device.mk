@@ -338,11 +338,9 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-common \
-    ims-ext-common \
-    telephony-ext
+    ims-ext-common 
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
     WfdCommon
 
 # Seccomp

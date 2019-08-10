@@ -226,6 +226,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 # Power
+TARGET_HAS_NO_WIFI_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Peripheral manager
@@ -283,6 +284,15 @@ WIFI_DRIVER_STATE_CTRL_PARAM := "/sys/kernel/boot_wlan/boot_wlan"
 WIFI_DRIVER_STATE_OFF := 0
 WIFI_DRIVER_STATE_ON := 1
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
+# Hals
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8998
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8998
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8998
+ PRODUCT_SOONG_NAMESPACES += \
+	hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
+	hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
+	hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
 
 # inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
