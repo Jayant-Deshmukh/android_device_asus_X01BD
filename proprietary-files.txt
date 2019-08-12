@@ -62,7 +62,6 @@ vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_hdr.so
 vendor/lib/libarcsoft_night_shot.so
 vendor/lib/libarcsoft_picselfie_algorithm.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libhal_dbg.so
@@ -170,7 +169,6 @@ vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-vendor/lib64/libcdsprpc.so
 vendor/lib64/libscveBlobDescriptor.so
 vendor/lib64/libscveBlobDescriptor_stub.so
 vendor/lib64/libscveCommon.so

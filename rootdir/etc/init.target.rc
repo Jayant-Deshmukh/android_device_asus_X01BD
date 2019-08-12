@@ -220,6 +220,12 @@ service adsprpcd /vendor/bin/adsprpcd audiopd
    group media
    writepid /dev/cpuset/system-background/tasks
 
+service vendor.cdsprpcd /vendor/bin/cdsprpcd
+   class main
+   user system
+   group system
+   disabled
+
 ## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
     class main
