@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.config@1.3
+    vendor.display.config@1.1
 
 # DRM
 PRODUCT_PACKAGES += \
