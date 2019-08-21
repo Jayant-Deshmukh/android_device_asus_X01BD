@@ -1,3 +1,28 @@
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service\.X01BD     u:object_r:hal_sensors_default_exec:s0
 
+# Sensors
+/sys/devices/virtual/input/input[0-9]+/stk3x3x-light(/.*)?                    u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/input/input[0-9]+/stk3x3x-proximity(/.*)?                u:object_r:sysfs_sensors:s0
+/sys/module/stk3x3x/parameters/call_status_flag                               u:object_r:sysfs_call_status:s0
+
+# gpio-keys
+/vendor/usr/keylayout/gpio-keys\.kl                                           u:object_r:vendor_kl_file:s0
+
+# biometrics
+/data/system/cdfinger(/.*)?                                                   u:object_r:cdfinger_data_file:s0
+/dev/focaltech_fp                                                             u:object_r:focaltech_device:s0
+/dev/fpsdev0                                                                  u:object_r:cdfinger_device:s0
+/dev/goodix_fp                                                                u:object_r:gxfingerprint_device:s0
+/dev/spidev0.0                                                                u:object_r:focaltech_device:s0
+/data/vendor/focaltech(/.*)?                                                  u:object_r:focaltech_data_file:s0
+
+# NFC
+/dev/pn54x                                                                    u:object_r:nfc_device:s0
+/dev/pn553                                                                    u:object_r:nfc_device:s0
+
+# blutmac script
+/(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
+/vendor/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
+
+/vendor/bin/init.wlan.sh    u:object_r:qti_init_shell_exec:s0
