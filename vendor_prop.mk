@@ -114,6 +114,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
+# IOP
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.iop.enable_uxe=0 \
+    vendor.iop.enable_prefetch_ofr=0
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
