@@ -38,6 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee \
     persist.vendor.btstack.enable.splita2dp=true \
