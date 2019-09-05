@@ -1,7 +1,4 @@
 # Sensors
-/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service\.X01BD     u:object_r:hal_sensors_default_exec:s0
-
-# Sensors
 /sys/devices/virtual/input/input[0-9]+/stk3x3x-light(/.*)?                    u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/input/input[0-9]+/stk3x3x-proximity(/.*)?                u:object_r:sysfs_sensors:s0
 /sys/module/stk3x3x/parameters/call_status_flag                               u:object_r:sysfs_call_status:s0
