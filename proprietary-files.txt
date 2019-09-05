@@ -412,7 +412,7 @@ vendor/firmware/cppf.mdt
 # Fingerprint
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|982ea14d3e4a8fe179252e28672181ab24702014
 vendor/etc/permissions/qti_fingerprint_interface.xml|e725f93f2dbc377b9143a0322470a4a95dce2fa0
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/cdfinger.default.so
