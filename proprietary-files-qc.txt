@@ -231,6 +231,7 @@ vendor/lib64/librpmb.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsi.so
 vendor/lib64/libssd.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DRM - HDCP
 vendor/bin/hdcp1prov
@@ -250,12 +251,10 @@ vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
 
-# DRM (Widevine)
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib/libwvhidl.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
+# DRM (Widevine) - from mata QP1A.190711.107
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|5c2f83943a1c8680cde657e22425f665ab438714
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
+vendor/lib64/libwvhidl.so|ff967a2aab27d75eb858c6a7a269d4090af9f377
 
 # ESE-Powermanager - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|40f3291f2bddef8203d9dc3d9298e275eff800b0
