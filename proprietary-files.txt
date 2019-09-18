@@ -415,8 +415,8 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|982ea14d3e4a8fe179252e28672181ab24702014
 vendor/etc/permissions/qti_fingerprint_interface.xml|e725f93f2dbc377b9143a0322470a4a95dce2fa0
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.default.so
-vendor/lib64/hw/cdfinger.fingerprint.default.so
+vendor/lib64/hw/cdfinger.default.so|536f306af46c4b7d12d9a43df221567ec21feb32
+vendor/lib64/hw/cdfinger.fingerprint.default.so|e7fa88465f6ffb48fbe6232ba1881bc57c79ecf4
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.focaltech.default.so
 vendor/lib64/libgf_ca.so
