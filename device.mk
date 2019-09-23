@@ -138,11 +138,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
-# Device mapper verity
-PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/vendor
-$(call inherit-product, build/target/product/verity.mk)
-
 # Display
 PRODUCT_PACKAGES += \
     copybit.sdm660 \
