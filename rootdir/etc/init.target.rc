@@ -223,23 +223,6 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    group system
    disabled
 
-## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
-service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
-    class main
-    user radio
-    socket ims_qmid stream 0660 system radio
-    group radio log diag
-    writepid /dev/cpuset/system-background/tasks
-
-# imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
-service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
-    class main
-    user radio
-    socket ims_datad stream 0660 system radio
-    group radio wifi inet log diag
-    disabled
-    writepid /dev/cpuset/system-background/tasks
-
 service energy-awareness /vendor/bin/energy-awareness
     class main
     user system
@@ -249,49 +232,6 @@ service energy-awareness /vendor/bin/energy-awareness
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
-
-on property:vendor.ims.QMI_DAEMON_STATUS=1
-    start vendor.imsdatadaemon
-
-service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
-    class main
-    user radio
-    group radio vendor_qti_diag inet log
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.imsrcsservice /vendor/bin/imsrcsd
-    class main
-    user radio
-    group radio diag inet log wakelock
-    writepid /dev/cpuset/system-background/tasks
-
-on property:vendor.ims.DATA_DAEMON_STATUS=1
-    restart vendor.ims_rtp_daemon
-
-service ppd /vendor/bin/mm-pp-dpps
-    class late_start
-    user system
-    group system graphics
-    socket pps stream 0660 system system
-    disabled
-
-on property:init.svc.surfaceflinger=stopped
-    stop ppd
-
-on property:init.svc.surfaceflinger=running
-    start ppd
-
-on property:init.svc.surfaceflinger=restarting
-    stop ppd
-
-on property:init.svc.zygote=stopped
-    stop ppd
-
-on property:init.svc.zygote=running
-    start ppd
-
-on property:init.svc.zygote=restarting
-    stop ppd
 
 on property:sys.boot_completed=1
     setprop sys.io.scheduler "bfq"
