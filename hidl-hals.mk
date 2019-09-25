@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
 
 # NFC-Secure Element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-service
+    android.hardware.secure_element@1.0
 
 # Power
 PRODUCT_PACKAGES += \
