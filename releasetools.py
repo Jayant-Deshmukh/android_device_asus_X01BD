@@ -40,3 +40,13 @@ abort("Error: This package requires firmware version ' + version_firmware + \
 ' or newer. Please upgrade firmware and retry!"););'
       info.script.AppendExtra(cmd)
   return
+
+def FullOTA_InstallEnd(info):
+  info.script.Mount("/system")
+  info.script.Mount("/vendor")
+  RunCustomScript(info, "device_check.sh", "")
+  return
+
+def RunCustomScript(info, name, arg):
+  info.script.AppendExtra(('run_program("/tmp/install/bin/%s", "%s");' % (name, arg)))
+  return
