@@ -149,8 +149,8 @@ PRODUCT_PACKAGES += \
     libgenlock
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    Doze
+#PRODUCT_PACKAGES += \
+#    Doze
 
 # FM
 PRODUCT_PACKAGES += \

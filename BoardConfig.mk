@@ -225,10 +225,9 @@ BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 VENDOR_SECURITY_PATCH := 2018-06-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
-SELINUX_IGNORE_NEVERALLOWS := true
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
@@ -244,6 +243,15 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
+# Hals
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8998
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8998
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8998
+ PRODUCT_SOONG_NAMESPACES += \
+	hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
+	hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
+	hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
 
 # inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
