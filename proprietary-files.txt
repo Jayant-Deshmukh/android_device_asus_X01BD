@@ -440,4 +440,4 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # NVRAM
 bin/nvram_btwifi:vendor/bin/nvram_btwifi
-lib64/libmmi.so:vendor/lib64/libmmi.so
+lib64/libmmi.so:vendor/lib64/libmmi.so|e3c16694406d6bc77c70f04f0d979ca4e65498d5
