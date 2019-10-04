@@ -82,10 +82,8 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
