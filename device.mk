@@ -168,7 +168,12 @@ PRODUCT_COPY_FILES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
+    libbatching \
     libcurl \
+    libgeofencing \
+    libgnss \
+    libgps.utils \
+    liblocation_api \
     libsensorndkbridge \
     libvehiclenetwork-native
 
