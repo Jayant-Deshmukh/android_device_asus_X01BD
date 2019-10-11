@@ -44,6 +44,7 @@ abort("Error: This package requires firmware version ' + version_firmware + \
 def FullOTA_InstallEnd(info):
   info.script.Mount("/system")
   info.script.Mount("/vendor")
+  info.script.Mount("/mnt/vendor/persist")
   RunCustomScript(info, "device_check.sh", "")
   return
 

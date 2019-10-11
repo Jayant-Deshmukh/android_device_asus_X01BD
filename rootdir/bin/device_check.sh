@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 # Check if device supports NFC
-if grep -q -w NFC /dev/block/platform/soc/c0c4000.sdhci/by-name/version; then
+if grep -q -w RU /mnt/vendor/persist/flag/countrycode.txt; then
     echo "Device supports NFC"
 else
     echo "Device doesn't support NFC , removing ..."
