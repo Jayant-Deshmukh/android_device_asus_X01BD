@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 The MSM-Xtended Project
+# Copyright (C) 2019-2020 The SuperiorOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,14 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Xtended stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common superior stuff
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official MSM-Xtended
-XTENDED_BUILD_TYPE := OFFICIAL
 
 # Google Connectivity Services
 TARGET_INCLUDE_WIFI_EXT := true
@@ -35,7 +32,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_X01BD
+PRODUCT_NAME := superior_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
@@ -53,10 +50,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Build fingerprint
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
-# Xtended Maintainer
+# Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=🔥SonalSingh18🔥
-
-# Xteneded version
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.display.version=XQ-OFFICIAL-Release-v8.0
+    ro.superior.maintainer=Jayant-Deshmukh
