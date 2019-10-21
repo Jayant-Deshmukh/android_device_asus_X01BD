@@ -170,12 +170,6 @@ PRODUCT_COPY_FILES += \
 # GPS / Location
 PRODUCT_PACKAGES += \
     libcurl \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
-    liblocation_api \
-    libloc_core \
-    libloc_pla \
     libsensorndkbridge \
     libvehiclenetwork-native
 
