@@ -119,6 +119,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    liba2dpoffload \
     libbthost_if
 
 # Connectivity Engine support (CNE)
