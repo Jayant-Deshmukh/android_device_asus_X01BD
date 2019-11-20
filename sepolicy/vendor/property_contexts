@@ -1,5 +1,4 @@
 persist.net.doxlat                            u:object_r:vendor_net_radio_prop:s0
-persist.vendor.camera.debug.logfile           u:object_r:vendor_cfg_prop:s0
 persist.nfc                                   u:object_r:nfc_prop:s0
 ro.hq.support.nfc                             u:object_r:nfc_sensors_prop:s0
 use.audio.eu.parameters	                      u:object_r:hal_audio_prop:s0
