@@ -55,6 +55,9 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # Hack for camera hal
+    mount none /system/lib/libprocessgroup.so /system/lib/vndk-29/libprocessgroup.so bind
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
