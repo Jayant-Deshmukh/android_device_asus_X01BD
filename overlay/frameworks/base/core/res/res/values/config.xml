@@ -747,4 +747,7 @@
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
 
+    <!-- Flashlight on power button -->
+    <integer name="config_flashlightProximityTimeout">-1</integer>
+
 </resources>
