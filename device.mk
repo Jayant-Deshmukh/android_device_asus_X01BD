@@ -344,8 +344,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensor config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    $(LOCAL_PATH)/sensors/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
