@@ -38,9 +38,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
  # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.vendor.btstack.enable.splita2dp=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
@@ -58,7 +58,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Codec2 switch
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -71,7 +72,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=1
-    persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # Dalvik overrides
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -84,17 +84,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.iwlan.enable=true \
+    persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
-
-# Enable stm-events
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.coresight.config=stm-events
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -107,22 +103,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
+    debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=1 \
-    debug.sf.early_phase_offset_ns=5000000 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    debug.hwui.use_buffer_age=false \
-    dev.pm.dyn_samplingrate=1 \
+    debug.sf.latch_unsignaled=1 \
     persist.demo.hdmirotationlock=false \
+    persist.hwc.mdpcomp.enable=true \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=480 \
-    sys.use_fifo_ui=1 \
-    sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
-
-# IOP
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.iop.enable_uxe=0 \
-    vendor.iop.enable_prefetch_ofr=0
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -132,6 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     vendor.mm.enable.qcom_parser=13631487 \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true \
@@ -141,11 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable_bframes=1 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1 \
-    ro.config.media_vol_steps=30 \
-
-# Misc
-PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true
+    ro.config.media_vol_steps=30
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -166,13 +151,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=2 \
     ro.vendor.display.cabl=2
 
+# Perfd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
+
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.at_library=libqti-at.so \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.qti.core_ctl_max_cpu=4 \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
+    ro.vendor.qti.va_aosp.support=1 \
+    ro.vendor.qti.sys.fw.bg_apps_limit=60 \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -193,6 +179,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.config.vc_call_vol_steps=11 \
     ro.telephony.default_network=20,20 \
+    ro.telephony.iwlan_operation_mode=legacy \
     telephony.lteOnCdmaDevice=1
 
 # Radio - IMS
@@ -225,12 +212,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Skip Validate Disable
 PRODUCT_PROPERTY_OVERRIDES += \
-    sdm.debug.disable_skip_validate=1 \
     vendor.display.disable_skip_validate=1
-
-# Shutdown
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.vendor.shutdown.waittime=500
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -247,6 +229,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # System prop for UBWC
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.gralloc.enable_fb_ubwc=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1
 
 # Time
