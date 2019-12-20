@@ -8,6 +8,14 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Global_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_General_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_workspaceFile.qwsp
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Handset_cal.acdb
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
