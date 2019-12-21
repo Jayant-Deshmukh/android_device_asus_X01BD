@@ -28,6 +28,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Official MSM-Xtended
 XTENDED_BUILD_TYPE := OFFICIAL
 
+# Google Connectivity Services
+TARGET_INCLUDE_WIFI_EXT := true
+
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
