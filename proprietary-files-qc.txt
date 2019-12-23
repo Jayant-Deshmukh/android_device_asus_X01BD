@@ -97,9 +97,9 @@ vendor/lib64/soundfx/libasphere.so|8b34e5df3f9070cdfead48f064a3135a719503c7
 vendor/lib64/soundfx/libqcbassboost.so|353a8b27d979025605aa5ff947d784af4fa857ee
 vendor/lib64/soundfx/libqcvirt.so|2edef3ddea74a51666354d8c45fbc1634f92cfbe
 
-# Bluetooth aptX
-lib64/libaptX_encoder.so
-lib64/libaptXHD_encoder.so
+# Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Bluetooth - from LA.UM.8.2.r1-06200-sdm660.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5acf94f38e47c2ec43c95e132dfe7b5d71ec41c4
