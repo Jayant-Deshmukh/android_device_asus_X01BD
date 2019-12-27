@@ -101,22 +101,8 @@ vendor/lib64/libbt-hidlclient.so|4a4038013bf438627154899d3823c9346c3d84ec
 
 # Bluetooth (shared dependencies) - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
-
-# Bluetooth Audio - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
-vendor/lib64/hw/audio.bluetooth_qti.default.so|227b61f8b6851839d1a826b734c759361bab4e23
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dacf9a625cc9f8829dd2ab8256d769291f33e98a
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|f9dcf9a19a0b601969bcd606bedb8a8419de9d81
-vendor/lib64/libbluetooth_audio_session_qti.so|124b2adcde969954bc2f2b8eab8e98b2694f7a59
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
-vendor/lib/hw/audio.bluetooth_qti.default.so|ecc09bb4a84c964b50af91f73295e2cecdc1433d
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|3cc64b90af15016a3bbe21eb265805d0c3e35796
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|1360ae1d4f10d3762699d6ce82b456d8a0145a23
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|b2a644519ad0d890274c384f76269de76e706058
-vendor/lib/libbluetooth_audio_session_qti.so|4dca1e62a630f9ab9900f217a27f77a02e74767a
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5c24249adf85a30aa66f6a391bf697063d989a87
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|20464213b5f2cdb7d9c10f31b5b53fc03526698f
 
 # Charger - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
