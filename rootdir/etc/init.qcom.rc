@@ -390,6 +390,12 @@ service nvram_btwifi /vendor/bin/nvram_btwifi
     oneshot
     disabled
 
+service nvram_country /vendor/bin/nvram_country
+    class core
+    user root
+    group system
+    oneshot
+
 on property:sys.boot_completed=1
     start nvram_btwifi
 
