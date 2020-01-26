@@ -263,6 +263,9 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
