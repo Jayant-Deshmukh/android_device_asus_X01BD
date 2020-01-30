@@ -12,4 +12,3 @@ allow nvram_btwifi persist_file:dir {write create getattr setattr add_name remov
 allow nvram_btwifi persist_file:file {rw_file_perms setattr unlink};
 allow nvram_btwifi property_socket:sock_file write;
 allow nvram_btwifi nvram_btwifi_prop: property_service set;
-allow nvram_btwifi system_file:file execute_no_trans;
