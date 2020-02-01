@@ -1,4 +1,4 @@
-# Audio ACDB
+# Audio ACDB - WW_Phone-17.2018.1912.409-20200114
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
@@ -17,17 +17,16 @@ vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_workspaceFile.qwsp
 vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Handset_cal.acdb
 
-# Audio firmware
+# Audio firmware - WW_Phone-17.2018.1912.409-20200114
 vendor/firmware/tfa98xx.cnt
 vendor/lib/hw/audio.primary.sdm660.so
 vendor/lib64/hw/audio.primary.sdm660.so
 
-# Camera
+# Camera - WW_Phone-17.2018.1912.409-20200114
 vendor/lib/hw/camera.sdm660.so
-vendor/lib/libarcsoft_arc3dnr_intf.so
-vendor/lib/libarcsoft_arcshdr_intf.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_hdr_detection.so
 vendor/lib/libarcsoft_hdr.so
 vendor/lib/libarcsoft_night_shot.so
 vendor/lib/libarcsoft_picselfie_algorithm.so
@@ -55,6 +54,7 @@ vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera2_stats_modules.so
+
 vendor/lib/libmmcamera_arcsoftbokeh_lib.so
 vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_csidtg.so
@@ -92,6 +92,7 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -104,7 +105,6 @@ vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
@@ -122,8 +122,6 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscvePanorama.so
 vendor/lib/libscvePanorama_lite.so
-vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libvideoutils.so
 
 vendor/lib64/libmmcamera2_frame_algorithm.so
@@ -149,22 +147,20 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/libscvePanorama.so
 vendor/lib64/libscvePanorama_lite.so
-vendor/lib64/libts_detected_face_hal.so
-vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libvideoutils.so
 
-# Camera OIS
+# Camera OIS - WW_Phone-17.2018.1912.409-20200114
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
-# Camera Actuator
+# Camera Actuator - WW_Phone-17.2018.1912.409-20200114
 vendor/lib/libactuator_imx486_holitech_12m.so
 vendor/lib/libactuator_imx486_qtech_12m.so
 vendor/lib/libactuator_ov13855_chicony_rear_s2034.so
 vendor/lib/libactuator_ov13855_holitech_fp5510a.so
 vendor/lib/libactuator_pseudo.so
 
-# Camera Chromatix
+# Camera Chromatix - WW_Phone-17.2018.1912.409-20200114
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -330,7 +326,7 @@ vendor/lib/libchromatix_ov13855_video_full.so
 vendor/lib/libchromatix_ov13855_zsl_preview_bu64297.so
 vendor/lib/libchromatix_ov13855_zsl_video_bu64297.so
 
-# Camera configs
+# Camera configs - WW_Phone-17.2018.1912.409-20200114
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/gc5025_ofilm_13m_chromatix.xml
 vendor/etc/camera/gc5025_ofilm_16m_chromatix.xml
@@ -339,10 +335,10 @@ vendor/etc/camera/imx486_qtech_chromatix.xml
 vendor/etc/camera/ov13855_chromatix.xml
 vendor/etc/camera/ov13855_holitech_13m_chromatix.xml
 
-# Camera firmware
+# Camera firmware - WW_Phone-17.2018.1912.409-20200114
 vendor/firmware/cpp_firmware_v1_12_0.fw
 
-# Camera ISP
+# Camera ISP - WW_Phone-17.2018.1912.409-20200114
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -419,21 +415,14 @@ vendor/firmware/cppf.b06
 vendor/firmware/cppf.b07
 vendor/firmware/cppf.mdt
 
-# Fingerprint
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+# Fingerprint - WW_Phone-17.2018.1912.409-20200114
+product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+product/etc/permissions/qti_fingerprint_interface.xml
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|982ea14d3e4a8fe179252e28672181ab24702014
-vendor/etc/permissions/qti_fingerprint_interface.xml|e725f93f2dbc377b9143a0322470a4a95dce2fa0
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.default.so|536f306af46c4b7d12d9a43df221567ec21feb32
-vendor/lib64/hw/cdfinger.fingerprint.default.so|e7fa88465f6ffb48fbe6232ba1881bc57c79ecf4
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/cdfinger.fingerprint.default.so
 vendor/lib64/hw/fingerprint.focaltech.default.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixfingerprintd_binder.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # NFC
