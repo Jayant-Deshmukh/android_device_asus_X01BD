@@ -79,12 +79,6 @@ on early-boot
     chown system system /persist/sensors/registry/config
     chmod 0664 /persist/sensors/sensors_settings
 
-    chown root system /dev/input/event3
-    chown :system /dev/input/event3
-
-    chown root system /dev/input/event4
-    chown :system /dev/input/event4
-
     chown system system /mnt/vendor/persist/sensors
     chown system system /mnt/vendor/persist/sensors/sns.reg
     chown system system /mnt/vendor/persist/sensors/sensors_list.txt
@@ -93,8 +87,15 @@ on early-boot
     chown system system /mnt/vendor/persist/sensors/registry/registry/sensors_registry
     chown system system /mnt/vendor/persist/sensors/sensors_settings
     chown system system /mnt/vendor/persist/sensors/registry/sns_reg_config
+    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_version
     chown system system /mnt/vendor/persist/sensors/registry/config
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
+
+    chown system system /mnt/vendor/persist/data/pfm/licenses
+    chmod 0775 /mnt/vendor/persist/data/pfm/licenses
+
+     chown system system /dev/input/event3  # stk3x3x-light
+     chown system system /dev/input/event4  # stk3x3x-proximity
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
@@ -211,6 +212,10 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
+    #sensors log dir
+    mkdir /data/vendor/sensors
+    chown system system /data/vendor/sensors
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -320,6 +325,10 @@ on post-fs-data
     mkdir /dev/socket/location 0770 gps gps
     mkdir /dev/socket/location/ehub 0770 gps gps
 
+    #Create directories for wifihal services
+    mkdir /dev/socket/wifihal 0770 wifi wifi
+    chmod 2770 /dev/socket/wifihal
+
     # Create /data/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
@@ -380,9 +389,13 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
 
-    # Create dir for focaltech fingerprint
+    #Create directory for focaltech fingerprint
     mkdir /data/vendor/focaltech 0760 system system
     restorecon /data/vendor/focaltech
+
+    #Create directory for cdfinger fingerprint
+    mkdir /data/system/cdfinger 0700 system system
+    restorecon /data/system/cdfinger
 
 service nvram_btwifi /vendor/bin/nvram_btwifi
     user root

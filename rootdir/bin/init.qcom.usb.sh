@@ -100,7 +100,11 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a \
 			      fi
 		      ;;
 	              "msm8998" | "sdm660" | "apq8098_latv")
-		          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,adb
+                          build_type=`getprop ro.build.type`
+                          if [ "$build_type" == "userdebug" ]; then
+                              setprop persist.vendor.usb.config diag,serial_cdev,rmnet,adb
+                          fi
+		          #setprop persist.vendor.usb.config diag,serial_cdev,rmnet,adb
 		      ;;
 	              "sdm845" | "sdm710")
 		          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,adb
