@@ -1,45 +1,48 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/bin/cdsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+# ADSP - from WW_Phone-17.2018.1912.409-20200114
+vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
+vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
+vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
+vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
+vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
+vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
+vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
+vendor/lib/libfastrpc_utf_stub.so|57736a2dbb5555b8e4b00aece6be028eddff818f
+vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
+vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
+vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
+vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
+vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
+vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
+vendor/lib64/libfastrpc_utf_stub.so|4bdb3be85d07be078325682abd0fc54278290b92
+vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
+vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
 
-# ADSP Modules
-vendor/etc/scve/facereco/gModel.dat
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so
+# CDSP - from WW_Phone-17.2018.1912.409-20200114
+vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
+vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
+vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
+vendor/lib/libsysmon_cdsp_skel.so|0da55092206d94a43a82d5a416969cbfd208acf2
+vendor/lib64/libcdsprpc.so|6636d9b8e1c3b80bae94cf1728c5168ef77cca5f
+vendor/lib64/libcdsp_default_listener.so|ebde03266606d634172d41bbc97ba9ebc5606423
+vendor/lib64/libsysmon_cdsp_skel.so|a76815923b46dbc41ba1a6b0f4942b8da8e52ce0
+
+# ADSP Modules - from WW_Phone-17.2018.1912.409-20200114
+vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 
 # Alarm - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
@@ -60,25 +63,25 @@ vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|273739730b88ed740fbcbe06890916211
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|aa08f9ec51392ed841f60ad08b7f083312c8c5ee
 
-# Audio
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libdrc.so
-vendor/lib/libqtigef.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libicepower.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+# Audio - from WW_Phone-17.2018.1912.409-20200114
+vendor/lib/libacdb-fts.so|a46d40837fb999fdaa7f6de16eb0d5e8a33d3d8b
+vendor/lib/libacdbloader.so|b831c567c4e2132f07f13efe7ba060981cfcdac8
+vendor/lib/libacdbrtac.so|7f9430f1da673f32595418e46f13568960b05a55
+vendor/lib/libadiertac.so|8486e3e37842dbe2f91fbb0a6c4989863fe45246
+vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
+vendor/lib/libaudcal.so|a009fe204ef10c517e00cbf0182714174abaab93
+vendor/lib/libaudioalsa.so|272cd6a93bca7edbe3cf4323ca1612737f4f9cde
+vendor/lib/libaudioconfigstore.so|410604c7d82ec0275a6b7f484ac006af0b85439d
+vendor/lib/libaudioparsers.so|485bbd30e2ea7e40d7fbcb3d7aa1f8a222cd2fc4
+vendor/lib/libaudio_log_utils.so|ad36513df2524539496677ff1cbec37037d0b476
+vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
+vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
+vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
+vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
+vendor/lib/soundfx/libicepower.so|deb50633389e267aae40740066a3de0bf1a7f007
+vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
+vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
+vendor/lib/soundfx/libqcvirt.so|ee9eaa81bb24ac0379e06b44ef257967a4d32614
 
 # Bluetooth - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
@@ -88,7 +91,6 @@ vendor/lib64/libbtnv.so|afa8f54b606c1c23ba598d8f85581c219a627eee
 vendor/lib64/libbt-hidlclient.so|4a4038013bf438627154899d3823c9346c3d84ec
 
 # Bluetooth (shared dependencies) - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
 
@@ -270,7 +272,7 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml|bedb01aed43b95943ac60f80c
 vendor/lib64/vendor.qti.hardware.factory@1.0.so|1347d5fb217b2a8801f19bea1f93016edb3ae93a
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|00e090806194349ef6235f985f0bca9b1ed07284
 
-# FM - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
+# FM - from WW_Phone-17.2018.1912.409-20200114
 -product/lib/vendor.qti.hardware.fm@1.0.so|a090651122fcad265ae7562c88dca746f893ad36
 -product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 lib/fm_helium.so|feb4819f1898c67dfda4f965d7cc2711c74d1a99
@@ -286,10 +288,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|a189a50515831e6ac9a7e88a165ac979ae6ac077
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|eaf70216b4e53f409c22764b272b79cd60a4b714
-
-# Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
 
 # GPS - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|108fa375ea1f0fd62aa5302da75f971a562a1f79
@@ -342,14 +340,14 @@ vendor/lib64/vendor.qti.gnss@2.1.so|a395bb7d4df874c0e0efadf8ef51d3510afedad3
 vendor/lib64/vendor.qti.gnss@3.0-service.so|947bfafbf110d70656f434ab5845b6691b6b61c1
 vendor/lib64/vendor.qti.gnss@3.0.so|ff1733d10abd97fa4381c798ae74b4cc5dac39e8
 
-# GPU firmware
-vendor/firmware/a512_zap.b00
-vendor/firmware/a512_zap.b01
-vendor/firmware/a512_zap.b02
-vendor/firmware/a512_zap.elf
-vendor/firmware/a512_zap.mdt
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
+# GPU firmware - from WW_Phone-17.2018.1912.409-20200114
+vendor/firmware/a512_zap.b00|85a7fc0008f9a2071d8b3d0cc212b19141633267
+vendor/firmware/a512_zap.b01|6cf67b834360cbdc907191ac21209c2eeb9d2bbe
+vendor/firmware/a512_zap.b02|33cc074ca840ae59f310a0e217aa7409afb30ac2
+vendor/firmware/a512_zap.elf|bd45c68d07ddc5330bf2f56c8b7006720672dbc9
+vendor/firmware/a512_zap.mdt|f8bdb9d98fb92f033c7d553ab84df0bbee9a0cbc
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # Graphics - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/lib/egl/eglSubDriverAndroid.so|6414deefe8f8454dfd8dfb33006b94789d124dab
@@ -424,10 +422,6 @@ vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|69fd7a9f800da8cb74ae3
 vendor/lib64/libkeymasterdeviceutils.so|763a02841eb133e698180e0cacf309450a4ce0e0
 vendor/lib64/libkeymasterprovision.so|f7e215595c2f7e62a6575b23a109b6b18556fc3b
 vendor/lib64/libkeymasterutils.so|679491d7b415f45469990380e4fd61e4bfbc445e
-
-# Keystore
-vendor/lib/hw/keystore.sdm660.so
-vendor/lib64/hw/keystore.sdm660.so
 
 # Listen - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 vendor/lib/hw/sound_trigger.primary.sdm660.so|4b987886ad21686783900e61bd2ee4d82f522934
@@ -739,21 +733,21 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so|7b227f1a007619dcae8d541eabe99eb5581
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|ebd8c3f0ebcccf5a8d5adbcd45f618e92c110a58
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|38080477e0515ea698fb2cc7ed33f1d1a39cd1f4
 
-# Sensors
-vendor/bin/sensors.qti
-vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/lib/hw/activity_recognition.sdm660.so
-vendor/lib/hw/sensors.sdm660_64.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor1.so
-vendor/lib/sensors.native.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.sdm660.so
-vendor/lib64/hw/sensors.sdm660_64.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensor1.so
-vendor/lib64/sensors.native.so
-vendor/lib64/sensors.ssc.so
+# Sensors - from WW_Phone-17.2018.1912.409-20200114
+vendor/bin/sensors.qti|556b206bd4a21fb641cd7088eeefef2bd0e68cd1
+vendor/etc/sensors/sensor_def_qcomdev.conf|be6b9c02c7af0b9a3c1f114a229dc40264f03d74
+vendor/lib/hw/activity_recognition.sdm660.so|9be48f9cb35dc2f41ef14c99384e4d817268df89
+vendor/lib/hw/sensors.sdm660_64.so|3603bba18b37e5432d41c21790826df7a2051fdf
+vendor/lib/libsensor_reg.so|ed019ab779425ca97b3d451ff0149dc3c0e6f2e0
+vendor/lib/libsensor1.so|5a169e230a4f81d634da07a700b848b02a09eaf7
+vendor/lib/sensors.native.so|e6524e8761cecade84c01f90fdd64bb60e6a73cd
+vendor/lib/sensors.ssc.so|4f449fc9b91ab521fd84d02f0bc30bdb4bc62f11
+vendor/lib64/hw/activity_recognition.sdm660.so|d38d2e389790aed55684ab2979262ebe24189509
+vendor/lib64/hw/sensors.sdm660_64.so|ef77feb04a710a7bdbfcb62e9977ecad87260ea8
+vendor/lib64/libsensor_reg.so|238ec472703d9e6294a143a750846066aef5027a
+vendor/lib64/libsensor1.so|1ca25ac841baf0d43609e82f9c7a1300d58da682
+vendor/lib64/sensors.native.so|9d5565c9a26b6f9b320c66bb67a1755f2a145a47
+vendor/lib64/sensors.ssc.so|bab481f26944f47160910dc51ea192eddfd34eb1
 
 # Sensors calibration - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040 release-keys
 product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|b6e036c7f03aa04b87e09e05c31d1e97d0f2cb25
