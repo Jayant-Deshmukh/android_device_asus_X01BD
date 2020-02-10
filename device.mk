@@ -174,7 +174,7 @@ PRODUCT_PACKAGES += \
 
 # Excluded Input devices
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
+    $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -317,7 +317,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI whilelistapp
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -389,7 +389,7 @@ PRODUCT_PACKAGES += \
 
 # QCOM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
 # QMI
 PRODUCT_PACKAGES += \
