@@ -21,12 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common NOS stuff
+$(call inherit-product, vendor/nitrogen/products/common.mk)
+TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := superior_tissot
+PRODUCT_NAME := nitrogen_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -40,6 +41,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080

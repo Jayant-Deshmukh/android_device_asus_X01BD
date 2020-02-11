@@ -93,8 +93,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.xiaomi_8953
 
 # Update engine
 PRODUCT_PACKAGES += \

@@ -50,5 +50,11 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+# Hals
+PRODUCT_SOONG_NAMESPACES += \
+	hardware/qcom-caf/msm8996/audio \
+        hardware/qcom-caf/msm8996/display \
+        hardware/qcom-caf/msm8996/media
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk

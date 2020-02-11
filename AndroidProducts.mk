@@ -14,4 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_tissot.mk
+    $(LOCAL_DIR)/nitrogen_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    nitrogen_tissot-userdebug
