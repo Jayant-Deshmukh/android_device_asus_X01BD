@@ -1,3 +1,8 @@
 type_transition init nvram_btwifi_exec:process nvram_btwifi;
 allow init nvram_btwifi:process transition;
 dontaudit init nvram_btwifi:process noatsecure;
+allow init sysfs_battery_supply:file setattr;
+allow init sysfs_devices_system_cpu:file write;
+allow init sysfs_kgsl:file { open write };
+allow init sysfs_kgsl:lnk_file read;
+allow init sysfs_mmc_host:file { open write };
