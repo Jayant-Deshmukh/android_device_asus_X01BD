@@ -60,24 +60,22 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so|5ef111c6ecb35b94233ae694d80161e9f61b7cd
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7ecb1de206
 
 # Audio - from WW_Phone-17.2018.1912.409-20200114
-vendor/lib/libacdb-fts.so|a46d40837fb999fdaa7f6de16eb0d5e8a33d3d8b
-vendor/lib/libacdbloader.so|b831c567c4e2132f07f13efe7ba060981cfcdac8
-vendor/lib/libacdbrtac.so|7f9430f1da673f32595418e46f13568960b05a55
-vendor/lib/libadiertac.so|8486e3e37842dbe2f91fbb0a6c4989863fe45246
-vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
-vendor/lib/libaudcal.so|a009fe204ef10c517e00cbf0182714174abaab93
-vendor/lib/libaudioalsa.so|272cd6a93bca7edbe3cf4323ca1612737f4f9cde
-vendor/lib/libaudioconfigstore.so|410604c7d82ec0275a6b7f484ac006af0b85439d
-vendor/lib/libaudioparsers.so|485bbd30e2ea7e40d7fbcb3d7aa1f8a222cd2fc4
-vendor/lib/libaudio_log_utils.so|ad36513df2524539496677ff1cbec37037d0b476
-vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
-vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
-vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
-vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
-vendor/lib/soundfx/libicepower.so|deb50633389e267aae40740066a3de0bf1a7f007
-vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
-vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
-vendor/lib/soundfx/libqcvirt.so|ee9eaa81bb24ac0379e06b44ef257967a4d32614
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libdrc.so
+vendor/lib/libqtigef.so
+vendor/lib/libsurround_3mic_proc.so
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth - from LA.UM.8.2.r1-05100-sdm660.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|dce7c7298b1801f6a037dc3e4597af56e3649bd0
