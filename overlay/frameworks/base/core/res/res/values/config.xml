@@ -764,4 +764,7 @@
     <!-- Whether device supports an alt. ambient display -->
     <bool name="config_alt_ambient_display">true</bool>
 
+    <!-- Smart Charing is available -->
+    <bool name="config_smartChargingAvailable">true</bool>
+
 </resources>
