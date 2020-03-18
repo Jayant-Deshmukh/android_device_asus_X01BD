@@ -1,1 +1,2 @@
+# Allow sensors to set nfc_sensors_prop
 set_prop(sensors, nfc_sensors_prop)
