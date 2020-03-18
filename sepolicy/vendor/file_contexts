@@ -7,7 +7,6 @@
 /data/system/cdfinger(/.*)?                                                   u:object_r:cdfinger_data_file:s0
 /dev/focaltech_fp                                                             u:object_r:focaltech_device:s0
 /dev/fpsdev0                                                                  u:object_r:cdfinger_device:s0
-/dev/goodix_fp                                                                u:object_r:gxfingerprint_device:s0
 /dev/spidev0.0                                                                u:object_r:focaltech_device:s0
 /data/vendor/focaltech(/.*)?                                                  u:object_r:focaltech_data_file:s0
 

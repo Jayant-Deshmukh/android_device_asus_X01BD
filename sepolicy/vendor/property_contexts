@@ -3,7 +3,6 @@ persist.nfc                                   u:object_r:nfc_prop:s0
 ro.hq.support.nfc                             u:object_r:nfc_sensors_prop:s0
 use.audio.eu.parameters	                      u:object_r:hal_audio_prop:s0
 
-persist.cdfinger.ready                        u:object_r:cdfinger_prop:s0
 property.cdfinger.enablesave                  u:object_r:cdfinger_prop:s0
 persist.vendor.runin.fp                       u:object_r:vendor_cfg_prop:s0
 
