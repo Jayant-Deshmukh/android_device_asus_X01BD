@@ -1,3 +1,0 @@
-type_transition init nvram_btwifi_exec:process nvram_btwifi;
-allow init nvram_btwifi:process transition;
-dontaudit init nvram_btwifi:process noatsecure;
