@@ -16,7 +16,7 @@
 
 package com.asus.zenparts;
 
-import android.os.SystemProperties;
+//import android.os.SystemProperties;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -132,6 +132,7 @@ class FileUtils {
         return defValue;
     }
 
+/*
     static void setProp(String prop, boolean value) {
         if (value) {
             SystemProperties.set(prop, "1");
@@ -151,4 +152,5 @@ class FileUtils {
     static String getStringProp(String prop, String defaultValue) {
         return SystemProperties.get(prop, defaultValue);
     }
+*/
 }

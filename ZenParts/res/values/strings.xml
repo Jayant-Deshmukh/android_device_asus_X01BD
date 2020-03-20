@@ -32,17 +32,22 @@
     <string name="vibration_title">Vibration</string>
     <string name="vibration_strength_title">Vibration Strength</string>
 
+
     <!-- Spectrum Profiles -->
+<!--
     <string name="spectrum_profile_title">Spectrum</string>
     <string name="spectrum_title">Spectrum Profiles</string>
     <string name="spectrum_summary">Choose your Spectrum Profiles</string>
     <string name="spectrum_dialogTitle">Choose your Spectrum Profiles</string>
+-->
 
     <!-- Values for Spectrum Presets -->
+<!--
     <string name="spectrum_performance">Performance</string>
     <string name="spectrum_battery">Battery</string>
     <string name="spectrum_gaming">Gaming</string>
     <string name="spectrum_balance">Balance</string>
+-->
 
     <string name="audio_title">Audio</string>
 

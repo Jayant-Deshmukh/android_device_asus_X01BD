@@ -14,6 +14,7 @@
      limitations under the License.
 -->
 <resources>
+<!--
     <string-array name="spectrum_profiles">
         <item>@string/spectrum_balance</item>
         <item>@string/spectrum_performance</item>
@@ -26,6 +27,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+-->
 
     <!-- Values for Dirac headset pref -->
     <string-array name="dirac_headset_pref_entries" translatable="false">

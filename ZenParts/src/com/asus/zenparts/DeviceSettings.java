@@ -46,9 +46,8 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
 
-    public static final String PREF_SPECTRUM = "spectrum";
-    public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
-
+//    public static final String PREF_SPECTRUM = "spectrum";
+//    public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
     public static final String PREF_ENABLE_DIRAC = "dirac_enabled";
     public static final String PREF_HEADSET = "dirac_headset_pref";
     public static final String PREF_PRESET = "dirac_preset_pref";
@@ -65,7 +64,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private CustomSeekBarPreference mTorchBrightness;
     private VibratorStrengthPreference mVibratorStrength;
     private Preference mKcal;
-    private SecureSettingListPreference mSPECTRUM;
+//    private SecureSettingListPreference mSPECTRUM;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
@@ -79,7 +78,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.preferences_asus_parts, rootKey);
 
-        String device = FileUtils.getStringProp("ro.build.product", "unknown");
+//        String device = FileUtils.getStringProp("ro.build.product", "unknown");
 
         mTorchBrightness = (CustomSeekBarPreference) findPreference(PREF_TORCH_BRIGHTNESS);
         mTorchBrightness.setEnabled(FileUtils.fileWritable(TORCH_1_BRIGHTNESS_PATH) &&
@@ -96,10 +95,12 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
+/*
         mSPECTRUM = (SecureSettingListPreference) findPreference(PREF_SPECTRUM);
         mSPECTRUM.setValue(FileUtils.getStringProp(SPECTRUM_SYSTEM_PROPERTY, "0"));
         mSPECTRUM.setSummary(mSPECTRUM.getEntry());
         mSPECTRUM.setOnPreferenceChangeListener(this);
+*/
 
         if (FileUtils.fileWritable(BACKLIGHT_DIMMER_PATH)) {
             mBacklightDimmer = (SecureSettingSwitchPreference) findPreference(PREF_BACKLIGHT_DIMMER);
@@ -166,11 +167,13 @@ public class DeviceSettings extends PreferenceFragment implements
                 FileUtils.setValue(TORCH_2_BRIGHTNESS_PATH, (int) value);
                 break;
 
+/*
             case PREF_SPECTRUM:
                 mSPECTRUM.setValue((String) value);
                 mSPECTRUM.setSummary(mSPECTRUM.getEntry());
                 FileUtils.setStringProp(SPECTRUM_SYSTEM_PROPERTY, (String) value);
                 break;
+*/
 
             case PREF_ENABLE_DIRAC:
                 try {
