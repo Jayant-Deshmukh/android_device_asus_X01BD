@@ -380,10 +380,6 @@ on post-fs-data
     mkdir /data/vendor/focaltech 0760 system system
     restorecon /data/vendor/focaltech
 
-    #Create directory for cdfinger fingerprint
-    mkdir /data/system/cdfinger 0700 system system
-    restorecon /data/system/cdfinger
-
 service nvram_btwifi /system/bin/nvram_btwifi
     user root
     group system
