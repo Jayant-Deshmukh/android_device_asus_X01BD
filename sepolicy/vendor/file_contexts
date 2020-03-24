@@ -15,6 +15,9 @@
 # Nvram
 /system/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
 
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0
+
 # USB HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.x01bd     u:object_r:hal_usb_default_exec:s0
 
