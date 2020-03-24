@@ -2,3 +2,6 @@ property.cdfinger.enablesave                  u:object_r:cdfinger_prop:s0
 persist.vendor.runin.fp                       u:object_r:cdfinger_prop:s0
 ro.config.versatility                         u:object_r:region_prop:s0
 ro.hq.support.nfc                             u:object_r:nfc_sensors_prop:s0
+
+# Dolby
+persist.vendor.dolby.loglevel                 u:object_r:vendor_dolby_loglevel_prop:s0
