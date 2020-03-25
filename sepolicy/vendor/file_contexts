@@ -11,6 +11,8 @@
 /dev/spidev0.0                                                                u:object_r:focaltech_device:s0
 /data/vendor/focaltech(/.*)?                                                  u:object_r:focaltech_data_file:s0
 
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service_asus      u:object_r:hal_fingerprint_default_exec:s0
+
 # NFC
 /dev/pn54x                                                                    u:object_r:nfc_device:s0
 /dev/pn553                                                                    u:object_r:nfc_device:s0

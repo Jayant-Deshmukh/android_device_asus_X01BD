@@ -420,8 +420,8 @@ vendor/firmware/cppf.mdt
 # Fingerprint - WW_Phone-17.2018.1912.409-20200114
 product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 product/etc/permissions/qti_fingerprint_interface.xml
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|982ea14d3e4a8fe179252e28672181ab24702014
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_asus
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service_asus.rc|982ea14d3e4a8fe179252e28672181ab24702014
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/cdfinger.fingerprint.default.so
 vendor/lib64/hw/fingerprint.focaltech.default.so
