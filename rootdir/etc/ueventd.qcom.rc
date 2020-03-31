@@ -336,9 +336,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/fts/touch_aoi aoi_set 0660 root system
 /sys/class/fts/touch_aoi power_set 0660 root system
 
-/dev/fpsdev0              0666   system     system
-/dev/goodix_fp            0666   system     system
-/dev/focaltech_fp         0666   system     system
+/dev/fpsdev0              0660   system     system
+/dev/focaltech_fp         0660   system     system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
