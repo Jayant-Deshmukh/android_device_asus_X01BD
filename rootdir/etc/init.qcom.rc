@@ -386,8 +386,15 @@ service nvram_btwifi /system/bin/nvram_btwifi
     oneshot
     disabled
 
+service country-code-sh /vendor/bin/init.country_code.sh
+    class core
+    user root
+    oneshot
+    disabled
+
 on property:sys.boot_completed=1
     start nvram_btwifi
+    start country-code-sh
 
 on property:sys.nvram.btmac=*
     start vendor-btmac-sh
