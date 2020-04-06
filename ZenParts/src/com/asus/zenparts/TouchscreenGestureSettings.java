@@ -34,8 +34,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 
-import com.android.internal.xtended.hardware.LineageHardwareManager; //Need FWB Support
-import com.android.internal.xtended.hardware.TouchscreenGesture; //Need FWB Support
+import com.android.internal.superior.hardware.LineageHardwareManager; //Need FWB Support
+import com.android.internal.superior.hardware.TouchscreenGesture; //Need FWB Support
 
 import com.asus.zenparts.R;
 import com.asus.zenparts.utils.ResourceUtils;
