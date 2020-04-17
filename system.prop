@@ -42,6 +42,7 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 sdm.debug.disable_skip_validate=1
 
 # Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vidc.enc.target_support_bframe=1
 vendor.vidc.enc.disable_bframes=1
