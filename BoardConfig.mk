@@ -131,6 +131,12 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+# Hals
+ PRODUCT_SOONG_NAMESPACES += \
+        hardware/qcom-caf/msm8998/audio \
+        hardware/qcom-caf/msm8998/display \
+        hardware/qcom-caf/msm8998/media
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
