@@ -17,7 +17,7 @@ vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_workspaceFile.qwsp
 vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Handset_cal.acdb
 
-# Audio firmware - WW_Phone-17.2018.1912.409-20200114
+# Audio firmware - WW_Phone-16.2017.2002.073-20200219
 vendor/firmware/tfa98xx.cnt
 vendor/lib/hw/audio.primary.sdm660.so
 vendor/lib/libtinycompress_vendor.so
