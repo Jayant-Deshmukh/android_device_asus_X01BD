@@ -42,8 +42,5 @@
 /(vendor|system/vendor)/bin/init\.country_code\.sh                            u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.wlan\.sh                                    u:object_r:qti_init_shell_exec:s0
 
-# Touch
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.asus      u:object_r:hal_lineage_touch_default_exec:s0
-
 # FPS Info
 /sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
