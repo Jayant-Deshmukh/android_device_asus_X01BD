@@ -24,4 +24,3 @@
 # Scripts
 /(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
 /(vendor|system/vendor)/bin/init\.country_code\.sh                            u:object_r:qti_init_shell_exec:s0
-/(vendor|system/vendor)/bin/init\.wlan\.sh                                    u:object_r:qti_init_shell_exec:s0
