@@ -161,10 +161,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libgenlock
 
-# Doze
-PRODUCT_PACKAGES += \
-    AsusDoze
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -428,5 +424,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # ZenParts
-#PRODUCT_PACKAGES += \
-#    ZenParts
+PRODUCT_PACKAGES += \
+    ZenParts
