@@ -3,12 +3,6 @@ persist.vendor.runin.fp                       u:object_r:cdfinger_prop:s0
 ro.config.versatility                         u:object_r:region_prop:s0
 ro.hq.support.nfc                             u:object_r:nfc_sensors_prop:s0
 
-# Spectrum
-persist.spectrum.profile                      u:object_r:spectrum_prop:s0
-
-# HAL3
-persist.camera.HAL3.enable                    u:object_r:camera_prop:s0
-
 # Dirac
 persist.audio.dirac                           u:object_r:dirac_prop:s0
 

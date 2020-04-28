@@ -1,5 +1,2 @@
 # Allow kernel to search in debugfs_wlan
 allow kernel debugfs_wlan:dir search;
-allow kernel kcal_dev:dir relabelto;
-allow kernel kcal_dev:file relabelto;
-allow kernel kcal_dev:lnk_file relabelto;
