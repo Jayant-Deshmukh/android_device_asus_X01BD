@@ -74,17 +74,6 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/advanced_settings_summary" />
         </activity>
-        <activity
-            android:name=".kcal.KCalSettingsActivity"
-            android:exported="false"
-            android:theme="@style/CustomOptionsTheme"
-            android:label="@string/advanced_settings_kcal">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <service android:name="com.asus.zenparts.ambient.SensorsDozeService"
                  android:permission="SensorsDozeService">
@@ -116,16 +105,6 @@
             </intent-filter>
         </service>
 
-        <service
-            android:name="com.asus.zenparts.DimmerTile"
-            android:icon="@drawable/ic_backlight"
-            android:label="@string/backlight_dimmer"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <!-- stub to ensure its loaded - DO NOT REMOVE -->
 
         <activity android:name=".KeyHandler" />
@@ -136,29 +115,5 @@
             android:theme="@style/CustomOptionsTheme">
         </activity>
 
-        <service
-            android:name="com.asus.zenparts.LogTile"
-            android:icon="@drawable/ic_qs_log"
-            android:label="@string/quick_settings_log_tile_label"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name=".FPSInfoService"
-            android:exported="false">
-        </service>
-        <service
-            android:name=".FPSTileService"
-            android:icon="@drawable/ic_fps_info"
-            android:label="@string/fps_info_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
     </application>
 </manifest>
