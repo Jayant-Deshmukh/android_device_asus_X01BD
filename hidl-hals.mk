@@ -128,10 +128,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.asus
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.x01bd

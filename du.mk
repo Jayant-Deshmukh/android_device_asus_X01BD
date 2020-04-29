@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common superior stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+# DU
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -32,7 +32,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_X01BD
+PRODUCT_NAME := du_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
@@ -50,6 +50,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Build fingerprint
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.superior.maintainer=Jayant-Deshmukh
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
