@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2019-2020 Havoc-OS
+# Copyright (C) 2019-2020 CarbonROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/havoc/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/carbon/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1

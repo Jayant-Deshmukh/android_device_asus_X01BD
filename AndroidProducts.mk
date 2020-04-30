@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 Havoc-OS
+# Copyright (C) 2019-2020 CarbonROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_X01BD.mk
+    $(LOCAL_DIR)/carbon_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_X01BD-eng \
-    havoc_X01BD-user \
-    havoc_X01BD-userdebug
+    carbon_X01BD-eng \
+    carbon_X01BD-user \
+    carbon_X01BD-userdebug
