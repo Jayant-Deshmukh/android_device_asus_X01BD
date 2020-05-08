@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 CarbonROM
+# Copyright (C) 2019 The AOSiP Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_X01BD.mk
+    $(LOCAL_DIR)/aosip_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_X01BD-eng \
-    carbon_X01BD-user \
-    carbon_X01BD-userdebug
+    aosip_X01BD-eng \
+    aosip_X01BD-user \
+    aosip_X01BD-userdebug
