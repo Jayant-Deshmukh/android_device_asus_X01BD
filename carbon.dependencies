@@ -1,2 +1,12 @@
 [
+  {
+    "repository": "CarbonROM/android_kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660"
+  },
+  {
+   "remote" : "gh",
+   "repository" : "LineageOS/android_packages_resources_devicesettings",
+   "target_path" : "packages/resources/devicesettings",
+   "revision" : "lineage-17.1"
+  }
 ]
