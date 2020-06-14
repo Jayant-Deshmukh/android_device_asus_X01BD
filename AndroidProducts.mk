@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_X01BD.mk
+    $(LOCAL_DIR)/nitrogen_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_X01BD-eng \
-    carbon_X01BD-user \
-    carbon_X01BD-userdebug
+    nitrogen_X01BD-eng \
+    nitrogen_X01BD-user \
+    nitrogen_X01BD-userdebug
