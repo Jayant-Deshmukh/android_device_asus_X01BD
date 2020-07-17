@@ -23,8 +23,6 @@ import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 import android.provider.Settings;
 
-import com.asus.zenparts.ambient.SensorsDozeService;
-
 public class BootReceiver extends BroadcastReceiver {
 
     public void onReceive(Context context, Intent intent) {
@@ -33,9 +31,6 @@ public class BootReceiver extends BroadcastReceiver {
 
         // Dirac
         context.startService(new Intent(context, DiracService.class));
-
-       // Ambient
-        context.startService(new Intent(context, SensorsDozeService.class));
 
     }
 }

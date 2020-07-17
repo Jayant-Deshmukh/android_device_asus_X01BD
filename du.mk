@@ -26,7 +26,8 @@ $(call inherit-product, vendor/du/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_WIDTH := 1080
 
 # Google Connectivity Services
 TARGET_INCLUDE_WIFI_EXT := true
@@ -52,7 +53,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Build fingerprint
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.superior.maintainer=Jayant-Deshmukh
