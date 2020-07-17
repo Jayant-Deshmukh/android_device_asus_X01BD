@@ -28,7 +28,6 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
-import com.asus.zenparts.ambient.AmbientGesturePreferenceActivity;
 import com.asus.zenparts.preferences.CustomSeekBarPreference;
 import com.asus.zenparts.preferences.SecureSettingListPreference;
 import com.asus.zenparts.preferences.SecureSettingSwitchPreference;
@@ -42,7 +41,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_HEADSET = "dirac_headset_pref";
     public static final String PREF_PRESET = "dirac_preset_pref";
 
-    private Preference mAmbientPref;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
@@ -57,16 +55,6 @@ public class DeviceSettings extends PreferenceFragment implements
         String device = FileUtils.getStringProp("ro.build.product", "unknown");
 
         PreferenceCategory displayCategory = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
-
-        mAmbientPref = findPreference("ambient_display_gestures");
-        mAmbientPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(getContext(), AmbientGesturePreferenceActivity.class);
-                startActivity(intent);
-                return true;
-            }
-        });
 
         boolean enhancerEnabled;
         try {
