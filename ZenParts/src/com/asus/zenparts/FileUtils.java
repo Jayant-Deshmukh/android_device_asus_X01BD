@@ -17,8 +17,6 @@
 package com.asus.zenparts;
 
 import android.os.SystemProperties;
-import android.content.res.Resources;
-import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -27,8 +25,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class FileUtils {
-
-    private static final String TAG = Utils.class.getSimpleName();
 
     static boolean fileWritable(String filename) {
         return fileExists(filename) && new File(filename).canWrite();
@@ -154,25 +150,5 @@ class FileUtils {
 
     static String getStringProp(String prop, String defaultValue) {
         return SystemProperties.get(prop, defaultValue);
-    }
-
-    public static String getLocalizedString(final Resources res,
-                                            final String stringName,
-                                            final String stringFormat) {
-        final String name = stringName.toLowerCase().replace(" ", "_");
-        final String nameRes = String.format(stringFormat, name);
-        return getStringForResourceName(res, nameRes, stringName);
-    }
-
-    public static String getStringForResourceName(final Resources res,
-                                                  final String resourceName,
-                                                  final String defaultValue) {
-        final int resId = res.getIdentifier(resourceName, "string", "com.xtended.device.DeviceSettings");
-        if (resId <= 0) {
-            Log.e(TAG, "No resource found for " + resourceName);
-            return defaultValue;
-        } else {
-            return res.getString(resId);
-        }
     }
 }

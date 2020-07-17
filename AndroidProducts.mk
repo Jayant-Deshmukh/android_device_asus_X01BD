@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_X01BD.mk
+    $(LOCAL_DIR)/reloaded_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_X01BD-userdebug
+    reloaded_X01BD-userdebug
